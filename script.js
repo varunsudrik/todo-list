@@ -1,9 +1,19 @@
-window.addEventListener("load",()=>{
-    let form = document.querySelector("#new-task-form");
-    let inputt = document.querySelector("#new-task-input");
-    let list = document.querySelector("#tasks");
+window.addEventListener('load',()=>{
+    const form = document.querySelector("#new-task-form")
+    const input = document.querySelector("#new-task-input")
+    const list_ele = document.querySelector(".task")
 
-    let dodo = inputt.value
+    form.addEventListener("submit", (e)=>{
+        e.preventDefault();
 
-    console.log(dodo)
+        let task = input.value;
+        if(!task){
+            alert("enter task")
+            return
+        }
+
+
+
+    })
 })
+
